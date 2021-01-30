@@ -10,7 +10,7 @@ var firebaseConfig = {
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-user_name = localStorage.getItem("Username");
+user_name = localStorage.getItem("username");
 room_name = localStorage.getItem("Roomname");
 
 function send() {
@@ -56,5 +56,5 @@ function logout() {
     window.location = "index.html";
 }
 function back() {
-    window.location = "rooms.html";
+    window.location = "bonfire_rooms.html";
 }
