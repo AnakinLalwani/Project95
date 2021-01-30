@@ -11,7 +11,7 @@ var firebaseConfig = {
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   //ADD YOUR FIREBASE LINKS HERE
-  user_name = localStorage.getItem("Username");
+  user_name = localStorage.getItem("username");
   function addroom() {
     room_name = document.getElementById("roomname").value; 
     firebase.database().ref("/").child(room_name).update({
@@ -36,7 +36,7 @@ var firebaseConfig = {
     window.location = "chat_page.html";
   }
   function logout() {
-    localStorage.removeItem("Username");
+    localStorage.removeItem("username");
     localStorage.removeItem("Roomname");
     window.location = "index.html";
   }
